@@ -17,9 +17,9 @@ http.createServer(function(request,response){
 	var _path_ = url.parse(request.url).pathname;
 
 	if(_path_ == '/'){
-		var file = path.join(__dirname, '../', _path_, 'index.html');
+		var file = path.join(__dirname, '../../../', _path_, 'index.html');
 	}  else {
-     	var file = path.join(__dirname, '../', _path_);
+     	var file = path.join(__dirname, '../../../', _path_);
    	}
 
    	console.log('path = '+_path_);
