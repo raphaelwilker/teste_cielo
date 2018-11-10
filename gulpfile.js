@@ -9,7 +9,6 @@ gulp.task('default', function() {
   // place code for your default task here
 });
 
-
 //gulp.task('ngdocs', [], function () {
 //  var gulpDocs = require('gulp-ngdocs');
 //  return gulp.src([
@@ -52,32 +51,20 @@ gulp.task('compress', function () {
 				.pipe(uglify({mangle: false}))
 				.pipe(gulp.dest('./bin/js/sever/index.js'))
 
+    gulp.src(['./node_modules/angular/angular.min.js'])    
+				.pipe(concat('angular.js'))
+				.pipe(gulp.dest('./bin/js'))
 
-    //gulp.src(['./scripts/angular/angular.min.js'])    
-		//.pipe(concat('angular.js'))
-	  //  .pipe(gulp.dest('./bin/js'))
-
-	//gulp.src(['./scripts/angular/modules/*.js'])
-	//	.pipe(concat('angular-modules.js'))
-	//    .pipe(gulp.dest('./bin/js'))
-
-	//gulp.src(['./scripts/jquery/**/*.js',
-	//	'./scripts/bootstrap/**/*.js'])    
-	//	.pipe(concat('libs.js'))
-	//    .pipe(gulp.dest('./bin/js'))        
-
-	//gulp.src(['./css/**/*.css'])
-	//	.pipe(concat('teste-mercado-livre-min.css'))
-	//	.pipe(cssMin())
-	//	.pipe(gulp.dest('./bin/css'))
-  
-  //gulp.src(['./css/bootstrap/fonts/*.woff2'])  
-  //  .pipe(gulp.dest('./bin/fonts'))
-
-  //gulp.src(['./css/bootstrap/fonts/*.woff'])  
-  //  .pipe(gulp.dest('./bin/fonts'))
-    
-  //gulp.src(['./css/bootstrap/fonts/*.ttf'])  
-  //  .pipe(gulp.dest('./bin/fonts'))    
+		gulp.src(['./node_modules/bootstrap/dist/js/bootstrap.min.js'])    
+				.pipe(concat('bootstrap.js'))
+				.pipe(gulp.dest('./bin/js'))
+		
+		gulp.src(['./node_modules/bootstrap/dist/css/bootstrap.min.css'])
+				.pipe(concat('bootstrap.css'))
+				.pipe(gulp.dest('./bin/css'))
+		
+		gulp.src(['./node_modules/jquery/dist/jquery.min.js'])    
+				.pipe(concat('jquery.js'))
+				.pipe(gulp.dest('./bin/js'))
 
 });

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="bin/css/teste-cielo-min.css" />
+
+		<script type="text/javascript" src="bin/js/libs.js"></script>
+		<script type="text/javascript" src="bin/js/teste-cielo-min.js"></script>
+
+	</head>
+	<body ng-app="routeTest">
+		<div class="stage">
+			<div class="header">
+				<div  class="col-lg-1 col-sm-1">
+					<br>
+				</div>
+				<div  class="col-lg-10 col-sm-10">
+					<div class="col-lg-1 col-sm-6">
+						<a href="https://www.mercadolivre.com.br/" class="logo">Mercado Livre Brasil - Onde comprar e vender de Tudo</a>
+					</div>	
+					<div class="col-lg-10 col-sm-6" form-search>
+					</div>
+				</div>
+				<div  class="col-lg-1 col-sm-1">
+					<br>
+				</div>
+			</div>
+			<div class="body">
+				<div class="col-lg-2 col-sm-2">
+				</div>
+				<div class="col-lg-10 col-sm-8 bodyList">
+					<div ng-view></div>
+				</div>
+				<div class="col-lg-2 col-sm-2">
+				</div>
+
+			</div>
+		</div>		
+	</body>
+</html>

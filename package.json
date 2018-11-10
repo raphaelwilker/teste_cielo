@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/raphaelwilker/teste_cielo/issues"
   },
-  "homepage": "https://github.com/raphaelwilker/teste_cielo#readme"
+  "homepage": "https://github.com/raphaelwilker/teste_cielo#readme",
+  "dependencies": {
+    "angular": "^1.7.5",
+    "bootstrap": "^4.1.3",
+    "gulp": "^3.9.1",
+    "jquery": "^3.3.1"
+  }
 }
