@@ -1,0 +1,24 @@
+{
+  "name": "teste_cielo_raphael_wilker",
+  "version": "1.0.0",
+  "description": "Teste desenvolvido para avaliação da Cielo feito por Raphael Wilker",
+  "main": "bin/js/server/index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphaelwilker/teste_cielo.git"
+  },
+  "keywords": [
+    "cielo",
+    "test",
+    "raphael_wilker"
+  ],
+  "author": "Raphael Wilker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raphaelwilker/teste_cielo/issues"
+  },
+  "homepage": "https://github.com/raphaelwilker/teste_cielo#readme"
+}
