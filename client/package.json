@@ -1,0 +1,23 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "Front Cliente teste Cielo",
+  "main": "main.js",
+  "scripts": {
+    "test": "",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphaelwilker/teste_cielo.git"
+  },
+  "author": "Raphael Wilker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raphaelwilker/teste_cielo/issues"
+  },
+  "homepage": "https://github.com/raphaelwilker/teste_cielo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
